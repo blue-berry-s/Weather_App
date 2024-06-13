@@ -1,0 +1,26 @@
+.future_forecast_tabs{
+    border-radius: 15px;
+    margin: 10px;
+    padding: 2px 10px;
+    text-align: left;
+    background-color: red;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.future_forecast_tabs .forecast_img{
+    width: 15%;
+    object-fit: scale-down;
+}
+
+.future_forecast_tabs .days{
+    flex:1;
+}
+
+.future_forecast_tabs .degree_style{
+    vertical-align: text-top;
+    margin-left: 0em;
+    font-size: 0.8em;
+}
