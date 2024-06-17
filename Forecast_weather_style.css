@@ -1,22 +1,37 @@
 .future_forecast_tabs{
+    text-align: left;
+    z-index:10;
     border-radius: 15px;
-    margin: 10px;
+    margin: 2vh;
     padding: 2px 10px;
     text-align: left;
     background-color: red;
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    box-shadow: 0 3px 2px rgba(31, 18, 43, 0.3);
+    
     
 }
 
+.future_forecast_tabs > *{
+    margin: 0px 2px;
+}
+
+.future_forecast_tabs .tempature, .future_forecast_tabs .percipi_probability{
+   
+    min-width: 2em;
+
+}
+
 .future_forecast_tabs .forecast_img{
-    width: 15%;
+    width: 10%;
     object-fit: scale-down;
 }
 
 .future_forecast_tabs .days{
     flex:1;
+    font-weight: bold;
 }
 
 .future_forecast_tabs .degree_style{
@@ -24,3 +39,4 @@
     margin-left: 0em;
     font-size: 0.8em;
 }
+

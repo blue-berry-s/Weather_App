@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html5>
     <head>
+        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -18,11 +19,12 @@
             <input type="text" name="search" placeholder="Enter Location..."> 
         </form>
         <p id="location_text"> Location_text, Country </p>
-
+        <div class="background_color show" id="alt_1"></div>
+        <div class="background_color hide" id="alt_2"></div>
 
         <div id="main_weather">
             <h1 id="tempature_text" class="tempature"> X <span class="degree_style">&deg;</span></h1>
-            <img src="Images\Rain_Icon.png">
+            <img id="weather_icon" src="Images\Rain_Icon.png">
             <p id="weather_cond_text">Weather Condition</p>
             <div id="additional_info">
                 <p id="high_text">
@@ -43,14 +45,14 @@
 
         <div id="future_forecast">
             <div class="future_forecast_tabs">
-                <p class="days" id="day+1">Day</p>
+                <p class="days" >Day</p>
                 <p class="tempature">X<span class="degree_style">&deg;</span></p>
                 <p class="percipi_probability"> P: N&#37; </p>
                 <img class="forecast_img" src="Images\Cloudy_Icon.png">
             </div>
 
             <div class="future_forecast_tabs">
-                <p class="days" id="day+2">Day</p>
+                <p class="days" >Day</p>
                 <p class="tempature">X<span class="degree_style">&deg;</span></p>
                 <p class="percipi_probability"> P: N&#37; </p>
                 <img class="forecast_img" src="Images\Cloudy_Icon.png">
@@ -58,15 +60,14 @@
 
 
             <div class="future_forecast_tabs">
-                <p  class="days"id="day+3">Day</p>
+                <p class="days">Day</p>
                 <p class="tempature">X<span class="degree_style">&deg;</span></p>
                 <p class="percipi_probability"> P: N&#37; </p>
                 <img class="forecast_img" src="Images\Cloudy_Icon.png">
             </div>
         </div>
-
     </body>
 
     <script src="script.js"></script>
     <script src="weather.js"></script>
-</html>
+</html5>
