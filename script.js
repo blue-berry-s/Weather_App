@@ -156,11 +156,12 @@ function updateMainWeather(weather){
 
 
 function updateFutureWeather(weather){
-
-    console.log(future_predictions.length);
     const today = new Date();
     let days_ahead = 1;
     for (var i = 0; i < future_predictions.length; i ++){
+        
+        future_predictions[i].classList.remove("hide");
+
         let date_text = future_predictions[i].querySelector('.days');
         let temperature_text = future_predictions[i].querySelector('.tempature');
         let percip_text = future_predictions[i].querySelector('.percipi_probability');
@@ -178,9 +179,15 @@ function updateFutureWeather(weather){
         weather_icon.src = weather_obj.img_src;
 
         future_predictions[i].style.background = weather_obj.color_gradient_predict;
+        
+        
     }
 
 }
+
+
+
+
 
 
 
